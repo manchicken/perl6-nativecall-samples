@@ -2,26 +2,26 @@
 #include <strings.h>
 #include <stdio.h>
 
-typedef struct one_string_and_one_int32_t_ {
-  char *one_string;
-  int32_t one_int32;
-} one_string_and_one_int32_t;
+typedef struct a_string_and_an_int32_t_ {
+  char *a_string;
+  int32_t an_int32;
+} a_string_and_an_int32_t;
 
-void init_struct(one_string_and_one_int32_t *target, char *str, int32_t int32) {
-  target->one_int32 = int32;
-  strcpy(target->one_string, str);
+void init_struct(a_string_and_an_int32_t *target, char *str, int32_t int32) {
+  target->an_int32 = int32;
+  strcpy(target->a_string, str);
 
   return;
 }
 
-char *string_from_struct(one_string_and_one_int32_t *target) {
-  return target->one_string;
+char *string_from_struct(a_string_and_an_int32_t *target) {
+  return target->a_string;
 }
 
-int int32_from_struct(one_string_and_one_int32_t *target) {
-  return target->one_int32;
+int int32_from_struct(a_string_and_an_int32_t *target) {
+  return target->an_int32;
 }
 
-void update_string_for_struct(one_string_and_one_int32_t *target, char *str) {
-  strcpy(target->one_string, str);
+void update_string_for_struct(a_string_and_an_int32_t *target, char *str) {
+  strcpy(target->a_string, str);
 }
